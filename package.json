@@ -1,0 +1,21 @@
+{
+  "name": "net-cal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src",
+    "build": "tsc"
+  },
+  "keywords": [
+    "IP",
+    "IPv4",
+    "Networks"
+  ],
+  "author": "Akuqt",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
