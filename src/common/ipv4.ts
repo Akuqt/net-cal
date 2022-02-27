@@ -1,9 +1,8 @@
-import { AddressFormat, IPv4Base } from "./types";
+import { FormatResult, AddressFormat, IPv4Base, IPv4T } from "./types";
 import { int2bin } from "./binary";
 import { parser } from "./parser";
-import { FormatResult } from ".";
 
-export class IPv4 {
+export class IPv4 implements IPv4T {
   private mask_: number[];
   private prefix_: number;
   private address_: number[];
