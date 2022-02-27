@@ -5,8 +5,8 @@ export const getParam = (rule: number, param: "s" | "h" = "h") => {
   const base = Math.log2(rule + (param === "h" ? 2 : 0));
   const int = Math.floor(base);
   const rest = base - int;
-  if (rest !== 0) return int + 1;
-  return base;
+  if (rest !== 0 && rest > 0.0025) return int + 1;
+  return int;
 };
 
 export const getMagic = (mask: number[]) => {
