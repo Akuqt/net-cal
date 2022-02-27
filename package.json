@@ -1,5 +1,5 @@
 {
-  "name": "net-cal",
+  "name": "net-util",
   "version": "1.0.0",
   "description": "Networking utilities.",
   "main": "dist/index.js",
