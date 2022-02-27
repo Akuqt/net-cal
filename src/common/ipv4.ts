@@ -15,10 +15,7 @@ export class IPv4 implements IPv4T {
     this.wildcard_ = wildcard;
   }
 
-  private formater(
-    format: AddressFormat = "plainDecimals",
-    address: number[]
-  ): FormatResult {
+  private formater(format: AddressFormat, address: number[]): FormatResult {
     switch (format) {
       case "plainDecimals":
         return address.join(".");
