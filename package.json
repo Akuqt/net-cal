@@ -1,8 +1,9 @@
 {
   "name": "net-cal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Networking utilities.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "ts-node-dev src",
     "build": "tsc",
@@ -11,10 +12,22 @@
   "keywords": [
     "IP",
     "IPv4",
-    "Networks"
+    "Networks",
+    "Subnetting",
+    "VLSM",
+    "Summarize",
+    "Range"
   ],
   "author": "Akuqt",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akuqt/net-util.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Akuqt/net-util/issues"
+  },
+  "homepage": "https://github.com/Akuqt/net-util#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
