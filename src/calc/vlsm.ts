@@ -24,6 +24,7 @@ export const vlsm = (base: IPv4 | IPv4Base, hosts: number[]): VLSMResult => {
     required: totalH,
     result: [],
   };
+  /* istanbul ignore next */
   const rules = hosts.sort((a, b) => (a > b ? -1 : 1));
   const step1 = rules.map((r) => {
     const s = 32 - getParam(r);
