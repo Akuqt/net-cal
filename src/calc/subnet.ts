@@ -69,6 +69,5 @@ export const subnetFromParams = (
     return subnetFromMask(init, p);
   }
   const n_ = 32 - s - h;
-  if (n_ + s + h !== 32) throw new Error("Invalid Params.");
   return subnetFromParams(ip, subnets, hosts, n_);
 };
